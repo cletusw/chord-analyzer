@@ -1,10 +1,13 @@
 {
   "name": "chord-analyzer",
+  "private": true,
   "version": "0.0.1",
   "description": "Analyzes input from QWERTY or MIDI keyboard and displays detected chord",
-  "main": "index.js",
+  "author": "Clayton Watts",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently --kill-others --names tsc,es-dev-server \"npm run tsc:watch\" \"es-dev-server --open --watch\"",
+    "tsc:watch": "tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -15,10 +18,19 @@
     "piano",
     "web-midi"
   ],
-  "author": "Clayton Watts",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/cletusw/chord-analyzer/issues"
   },
-  "homepage": "https://github.com/cletusw/chord-analyzer#readme"
+  "homepage": "https://cletusw.github.io/chord-analyzer",
+  "dependencies": {
+    "lit-html": "^1.0.0",
+    "lit-element": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "13.11.1",
+    "es-dev-server": "^1.55.0",
+    "typescript": "~3.8.2",
+    "concurrently": "^5.1.0",
+    "tslib": "^1.11.0"
+  }
 }
