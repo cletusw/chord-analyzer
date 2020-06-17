@@ -1,0 +1,24 @@
+{
+  "name": "chord-analyzer",
+  "version": "0.0.1",
+  "description": "Analyzes input from QWERTY or MIDI keyboard and displays detected chord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cletusw/chord-analyzer.git"
+  },
+  "keywords": [
+    "music-theory",
+    "piano",
+    "web-midi"
+  ],
+  "author": "Clayton Watts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cletusw/chord-analyzer/issues"
+  },
+  "homepage": "https://github.com/cletusw/chord-analyzer#readme"
+}
